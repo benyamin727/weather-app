@@ -26,14 +26,14 @@ const App: React.FC = () => {
                     defaultSelectedKeys={['2']}
                     items={new Array(3).fill(null).map((_, index) => ({
                         key: String(index + 1),
-                        label: `nav ${index + 1}`,
+                        label: `favourite ${index + 1}`,
                     }))}
                 />
             </Header>
             <Content className="site-layout" style={{ padding: '0 50px' }}>
                 <Breadcrumb style={{ margin: '16px 0' }}>
                     <Breadcrumb.Item>Home</Breadcrumb.Item>
-                    <Breadcrumb.Item>List</Breadcrumb.Item>
+                    <Breadcrumb.Item>Favourite</Breadcrumb.Item>
                     <Breadcrumb.Item>App</Breadcrumb.Item>
                 </Breadcrumb>
                 <div style={{ padding: 24, minHeight: 380, background: colorBgContainer }}>Content</div>
